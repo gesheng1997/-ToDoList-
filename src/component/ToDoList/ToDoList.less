@@ -1,0 +1,45 @@
+body{
+    width: 100%;
+    height: 100%;
+    // background-color:#fa8c16;
+
+    .toDoList{
+        width: 500px;
+        height: 700px;
+        margin:50px auto;
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: space-between;
+        box-shadow: 0 0 5px rgba(0,0,0,.7);
+        // border-radius: 50px;
+        // background-color:#ffc069 ;
+        padding:50px 50px;
+
+        .title{
+            width: 40%;
+            font-size: 40px;
+            margin:0 auto;
+        }
+
+        .listArea{
+            width: 100%;
+            display:flex;
+            flex-flow: wrap column;
+            align-items: center;
+
+            .addTask{
+                width: 96%;
+                height: 30px;
+                border: 1px gray solid;
+                padding:5px 10px;
+                font-size: 14px;
+            }
+
+            .addTask:focus{
+                outline: none;
+                border:2px #fa8c16 solid;
+                transition: border .5s;
+            }
+        }
+    }
+}
